@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/spreadsheet.ico" type="image/x-icon">
+    <title>Registro de atendimentos</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div id="container">
+            <img src="images/logo.png" alt="Sala do Empreendedor">
+            <a id="sebrae" href="http://www.salasdoempreendedor.com.br/admin.php" target="_blank" rel="external"><img  src="images/sebrae.png" alt="Sebrae"></a>
+            <a id="prefeitura" href="https://www2.londrina.pr.gov.br/sistemas/agendamento/admin/" target="_blank" rel="external"><img  src="images/londrina2.png" alt="Londrina"></a>
+        </div>
+    </header>
+    <main>
+        
+        <div id="insertion">
+            <label for="name">Nome</label>
+            <input type="text" id="name" class="limpar" autocomplete="off">
+            <label for="cpf">CPF</label>
+            <input type="tel" id="cpf" autocomplete="off">
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel" autocomplete="off">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="limpar" autocomplete="off">
+
+            <label for="source">Atendimento</label>
+            <select name="source" id="source" class="selectors">
+                <option value="" disabled selected></option>></option>
+                <option value="Atendimento">Atendimento</option>
+                <option value="Recepção">Recepção</option>
+                <option value="Telefone">Telefone</option>
+                <option value="WhatsApp">WhatsApp</option>
+            </select>
+
+
+                <div id="servico">
+                    <label for="services">Serviço</label>
+                    <select name="services" id="services" class="selectors">
+                        <option value="" disabled selected></option>></option>
+                        <option value="Alteração CNPJ">Alteração CNPJ</option>
+                        <option value="Baixa da Empresa">Baixa da Empresa</option>
+                        <option value="Baixa de Alvará de Licença">Baixa de Alvará de Licença</option>
+                        <option value="Boletos">Boletos</option>
+                        <option value="Declaração Anual de Faturamento">Declaração Anual de Faturamento</option>
+                        <option value="Emissão de Nota Fiscal">Emissão de Nota Fiscal</option>
+                        <option value="Formalização">Formalização</option>
+                        <option value="Parcelamento">Parcelamento</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <div id="observation" class="observation">
+                        <input type="radio" name="observation" id="finalizado" value="Finalizado">
+                        <label for="finalizado">Finalizado</label>
+                        <input type="radio" name="observation" id="reagendado" value="Reagendado">
+                        <label for="reagendado">Reagendado</label>
+                        <input type="radio" name="observation" id="duvida" value="Orientado">
+                        <label for="duvida">Orientado</label>
+                        <input type="radio" name="observation" id="encaminhado" value="Encaminhado">
+                        <label for="encaminhado">Encaminhado</label>
+                    </div>
+                </div>
+                <div id="servico2" class="out">
+                    <select name="services" id="services2" class="selectors">
+                        <option value="" disabled selected></option>></option>
+                        <option value="Alteração CNPJ">Alteração CNPJ</option>
+                        <option value="Baixa da Empresa">Baixa da Empresa</option>
+                        <option value="Baixa de Alvará de Licença">Baixa de Alvará de Licença</option>
+                        <option value="Boletos">Boletos</option>
+                        <option value="Declaração Anual de Faturamento">Declaração Anual de Faturamento</option>
+                        <option value="Emissão de Nota Fiscal">Emissão de Nota Fiscal</option>
+                        <option value="Formalização">Formalização</option>
+                        <option value="Parcelamento">Parcelamento</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <div id="observation2" class="observation">
+                        <input type="radio" name="observation2" id="finalizado2" value="Finalizado">
+                        <label for="finalizado2">Finalizado</label>
+                        <input type="radio" name="observation2" id="reagendado2" value="Reagendado">
+                        <label for="reagendado2">Reagendado</label>
+                        <input type="radio" name="observation2" id="duvida2" value="Orientado">
+                        <label for="duvida2">Orientado</label>
+                        <input type="radio" name="observation2" id="encaminhado2" value="Encaminhado">
+                        <label for="encaminhado2">Encaminhado</label>
+                    </div>
+                </div>
+                <div id="servico3" class="out">
+                    <select name="services" id="services3" class="selectors">
+                        <option value="" disabled selected></option>></option>
+                        <option value="Alteração CNPJ">Alteração CNPJ</option>
+                        <option value="Baixa da Empresa">Baixa da Empresa</option>
+                        <option value="Baixa de Alvará de Licença">Baixa de Alvará de Licença</option>
+                        <option value="Boletos">Boletos</option>
+                        <option value="Declaração Anual de Faturamento">Declaração Anual de Faturamento</option>
+                        <option value="Emissão de Nota Fiscal">Emissão de Nota Fiscal</option>
+                        <option value="Formalização">Formalização</option>
+                        <option value="Parcelamento">Parcelamento</option>
+                        <option value="Outros">Outros</option>
+                    </select>
+                    <div id="observation3" class="observation">
+                        <input type="radio" name="observation3" id="finalizado3" value="Finalizado">
+                        <label for="finalizado3">Finalizado</label>
+                        <input type="radio" name="observation3" id="reagendado3" value="Reagendado">
+                        <label for="reagendado3">Reagendado</label>
+                        <input type="radio" name="observation3" id="duvida3" value="Orientado">
+                        <label for="duvida3">Orientado</label>
+                        <input type="radio" name="observation3" id="encaminhado3" value="Encaminhado">
+                        <label for="encaminhado3">Encaminhado</label>
+                    </div>
+                </div>
+
+
+            <div class="wrap">
+                <button id="add">Adicionar</button>
+                <button id="rem" class="hide">Remover</button>
+            </div>
+
+            <div class="ajuste">
+                <button id="export">EXPORTAR</button>
+                <button id="clear" type="reset">LIMPAR</button>
+            </div>
+        </div>    
+        <div class='presentationContainer'>
+            <div id="presentation" class="hide">
+                <table>
+                    <tr>
+                        <th>Data</th>
+                        <th>Hora</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th>Atendimento</th>
+                        <th>Serviço</th>                        
+                        <th>Observação</th>
+                    </tr>
+                    <tr class="linha1">
+                        <td class="l1c1"></td>
+                        <td class="l1c2"></td>
+                        <td class="l1c3"></td>
+                        <td class="l1c4"></td>
+                        <td class="l1c5"></td>
+                        <td class="l1c6"></td>
+                        <td class="l1c7"></td>
+                        <td class="l1c8"></td>
+                        <td class="l1c9"></td>
+                    </tr>
+                    <tr class="linha2">
+                        <td class="l2c1"></td>
+                        <td class="l2c2"></td>
+                        <td class="l2c3"></td>
+                        <td class="l2c4"></td>
+                        <td class="l2c5"></td>
+                        <td class="l2c6"></td>
+                        <td class="l2c7"></td>
+                        <td class="l2c8"></td>
+                        <td class="l2c9"></td>
+                    </tr>
+                    <tr class="linha3">
+                        <td class="l3c1"></td>
+                        <td class="l3c2"></td>
+                        <td class="l3c3"></td>
+                        <td class="l3c4"></td>
+                        <td class="l3c5"></td>
+                        <td class="l3c6"></td>
+                        <td class="l3c7"></td>
+                        <td class="l3c8"></td>
+                        <td class="l3c9"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="iframeRegistroContainer">
+                <iframe class="iframeRegistro" src="https://docs.google.com/spreadsheets/d/1cRhPMgHCVjCGdxis5glf8epEGeLEu7XZHVo-6jW1yWU/edit#gid=0" frameborder="0"></iframe>
+            </div>
+        </div>
+    </main>
+    <article>
+        <label class="switch">
+            <input type="checkbox" class="agenda_prefeitura" name="agenda_prefeitura">
+            <span class="slider"></span>
+          </label>
+          <span>Agenda Prefeitura</span>
+        <div class="iframeAgendaContainer out2">
+            <iframe class="iframeAgenda"   frameborder="2"></iframe>
+        </div>
+        <label class="switch">
+            <input type="checkbox" class="agenda_recepcao" name="agenda_recepcao">
+            <span class="slider"></span>
+          </label>
+          <span>Agenda Recepção</span>
+        <div class="iframeRecepcaoContainer out2">
+            <iframe class="iframeRecepcao"  frameborder="2"></iframe>
+        </div>
+    </article> 
+
+
+
+    <script src="script.js"></script>
+    <script src="formMask_V2.js"></script>
+    <script>
+        new FormMask(document.querySelector("#cpf"), "___.___.___-__", "_", [".", "-"])
+        new FormMask(document.querySelector("#tel"), "(__)_____-____", "_", ["(", ")", "-"])
+    </script>
+</body>
+</html>
