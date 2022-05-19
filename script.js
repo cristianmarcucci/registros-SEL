@@ -236,6 +236,11 @@ function exportTable(){
             }
         }
     }
+
+    var copyText = document.querySelector('.linha1');
+    copyText.select();
+    navigator.clipboard.writeText(copyText.value);
+    alert('copiado');
 }
 
 exportButton.addEventListener('click', exportTable)
