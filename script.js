@@ -372,4 +372,23 @@ clear.addEventListener('click', event => {
     
 })
 
+//Enviar whatsapp para o número exportado
+const conversa = document.querySelector("#whatsapp");
+
+conversa.addEventListener('click', event=>{
+    if(document.querySelector('#tel').classList.contains('valid')){
+        var telefone = document.querySelector('#tel').value;
+        var ddd = telefone.substr(1,2);
+        var telFirst =  telefone.substr(5,4);
+        var telLast =  telefone.substr(10,4);
+        document.querySelector('#whatsapp').href=`https://api.whatsapp.com/send?phone=55${ddd}${telFirst}${telLast}`;
+        document.querySelector('#whatsapp').target='_Blank';
+        document.querySelector('#whatsapp').rel='external';
+    }else{
+        document.querySelector('#whatsapp').href='#';
+        document.querySelector('#whatsapp').target='';
+        document.querySelector('#whatsapp').rel='';
+        window.alert('Telefone não informado!');
+        }
+})
 
