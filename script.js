@@ -164,6 +164,13 @@ function verification() {
 
 }
 
+//Copiar a tabela para o Clipboard
+function copyTable(){
+    let textoCopiado = document.querySelector('#celulas').innerText;
+    navigator.clipboard.writeText(textoCopiado);
+}
+
+
 //Apresentar tabela com dados
 const exportButton = document.querySelector('#export');
 
@@ -237,10 +244,7 @@ function exportTable(){
         }
     }
 
-    var copyText = document.querySelector('.linha1');
-    copyText.select();
-    navigator.clipboard.writeText(copyText.value);
-    alert('copiado');
+    copyTable();
 }
 
 exportButton.addEventListener('click', exportTable)
