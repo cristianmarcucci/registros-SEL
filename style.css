@@ -239,6 +239,14 @@ th{
     font-weight: bold;
 }
 
+td{
+    width: 100px;  
+}
+
+#celulas{
+    max-width: 909px;
+}
+
 article{
     margin: 20px auto;
     max-width: 1500px;
