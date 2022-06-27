@@ -236,11 +236,14 @@ table{
 }
 
 th{
-    min-width: 100px;
+    min-width: 120px;
     height: 20px;
     background-color: #555;
     color: #fff;
     font-weight: bold;
+}
+td{
+    width: 120px;  
 }
 
 article{

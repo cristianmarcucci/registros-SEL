@@ -164,6 +164,13 @@ function verification() {
 
 }
 
+//Copiar a tabela para o Clipboard
+function copyTable(){
+    let textoCopiado = document.querySelector('#celulas').innerText;
+    navigator.clipboard.writeText(textoCopiado);
+}
+
+
 //Apresentar tabela com dados
 const exportButton = document.querySelector('#export');
 
@@ -236,6 +243,8 @@ function exportTable(){
             }
         }
     }
+
+    copyTable();
 }
 
 exportButton.addEventListener('click', exportTable)
