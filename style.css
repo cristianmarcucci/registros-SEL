@@ -232,19 +232,14 @@ table{
 }
 
 th{
-    min-width: 100px;
+    min-width: 120px;
     height: 20px;
     background-color: #555;
     color: #fff;
     font-weight: bold;
 }
-
 td{
-    width: 100px;  
-}
-
-#celulas{
-    max-width: 909px;
+    width: 120px;  
 }
 
 article{
